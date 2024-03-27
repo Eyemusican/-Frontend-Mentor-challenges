@@ -9,20 +9,22 @@
             font-family: Arial, sans-serif;
             background-color: #333;
             color: #fff;
-            display: flex; 
-            justify-content: center;  
+            display: flex;
+            justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
         }
+
         .card {
             background-color: #222;
             padding: 20px;
             border-radius: 20px;
-            text-align: center; 
+            text-align: center;
             max-width: 300px;
-            height: 500px
+            height: 600px
         }
+
         .profile-pic {
             width: 150px;
             height: 150px;
@@ -30,19 +32,23 @@
             object-fit: cover;
             margin-bottom: 20px;
         }
+
         .name {
             font-size: 24px;
             margin-bottom: 10px;
         }
+
         .location {
             font-size: 16px;
-            color: #aaa;
+            color: yellow; /* Location text color changed to yellow */
             margin-bottom: 20px;
         }
+
         .bio {
             font-style: italic;
             margin-bottom: 20px;
         }
+
         .btn {
             display: block;
             background-color: #444;
@@ -51,12 +57,18 @@
             padding: 10px 20px;
             border-radius: 5px;
             margin-bottom: 10px;
+            transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+        }
+
+        .btn:hover {
+            background-color: yellow; /* Button background color on hover */
+            color: #333; /* Button text color on hover */
         }
     </style>
 </head>
 <body>
     <div class="card">
-        <img src="Social Links/assets/images/avatar-jessica.png" alt="Profile Picture" class="profile-pic">
+        <img src="social-link/assets/images/avatar-jessica.png" alt="Profile Picture" class="profile-pic">
         <h2 class="name">Jessica Randall</h2>
         <p class="location">London, United Kingdom</p>
         <p class="bio">"Front-end developer and avid reader."</p>
